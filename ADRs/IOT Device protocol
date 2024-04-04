@@ -1,4 +1,7 @@
 # MQTT vs LwM2M vs CoAP
+
+## Overview
+This module aims to ingest data coming from sensor devices and camera.
 ## Status
 Accepted
 
