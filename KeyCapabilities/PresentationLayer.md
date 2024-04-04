@@ -13,3 +13,5 @@ BFF layer will talk to different submodules.
 Design Pattern & Architecture used:
 - Microservices
 - BFF
+
+Customer will be able to select region for which he needs to see information. Accordingly, data from different regions will be pulled and shown.
