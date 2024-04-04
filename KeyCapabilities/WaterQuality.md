@@ -8,3 +8,4 @@ This module caters to following requirements:
 - Background services running every minute to check for any thrashold breach for data received in last 1 minute.
 
 
+![Block diagram - WaterQuality (1)](https://github.com/Anamika1911/ArchitecturalKatas/assets/6397314/4ba00488-2dde-484c-a307-d3ad597dd32c)
