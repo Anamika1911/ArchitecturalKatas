@@ -46,7 +46,8 @@ Once a new Enclosure/Device is added in field, Operator will upload this detail 
 
 
 4. **Getting Fish Health Data**
-Camera is going to send us-	
+
+	Camera is going to send us-	
 	* Fish Physical Attributes such as size, wings, colors etc.
 	* Fish Behavioural Attributes such as active, inactive (may be due to bad health)
 	* We will keep on storing this data and at any point of time Alerting engine can utilize this data to raise alarms.
