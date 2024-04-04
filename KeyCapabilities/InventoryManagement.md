@@ -1,4 +1,5 @@
 Overview
+
 This module will take care of InventoryManagement which manages-
 1.FarmCollection
 2.Farm
@@ -40,6 +41,9 @@ Once a new Enclosure/Device is added in field, Operator will upload this detail 
 
 Payload Structure For Data packets
 
+![image](https://github.com/vivek-singh2/ArchitecturalKatas/assets/108721284/bf838cfc-ec32-4d42-a9cd-2f6346a57a3d)
+
+
 
 Getting Fish Health Data
 Camera is going to send us-	
@@ -55,6 +59,9 @@ New fish can be added to Enclosure by farmer or can result through breeding. On 
 "Current Fish Count" will send us current count and we can update the count in InventoryDatabase.
 Alarms can be raised if there is sudden decrease in count.
 By analysing timings when fish count increases, we can identify best harvesting time as well.
+
+![image](https://github.com/vivek-singh2/ArchitecturalKatas/assets/108721284/b64de2e2-f8b9-4267-8c84-2f7396967706)
+
 
 
 
