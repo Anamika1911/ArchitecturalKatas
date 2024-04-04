@@ -9,7 +9,9 @@ This module aims at capturing information from cameras in enclosures.
 - Fish movement
 
 ## Assumptions
-- Cameras are object recon
+- Cameras have object recognition techniques and they are able to identify individual fish, its species, fish movement and parasites.
+- Devices have sufficient power supply.
+  
 ## Block Diagram
 
 ## Architecture
