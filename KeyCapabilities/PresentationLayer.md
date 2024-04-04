@@ -8,3 +8,8 @@ UI will be rich for showing different types of content
 
 
 ![Block diagram - UIInteraction](https://github.com/Anamika1911/ArchitecturalKatas/assets/6397314/8412813d-6f3d-4eb6-ab08-885829986c89)
+
+BFF layer will talk to different submodules. 
+Design Pattern & Architecture used:
+- Microservices
+- BFF
