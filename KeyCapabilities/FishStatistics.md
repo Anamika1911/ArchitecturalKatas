@@ -9,7 +9,7 @@ This module aims at capturing information from cameras in enclosures.
 - Fish movement
 
 ## Assumptions
-- 
+- Cameras are object recon
 ## Block Diagram
 
 ## Architecture
