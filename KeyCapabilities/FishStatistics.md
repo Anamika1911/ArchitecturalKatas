@@ -13,5 +13,8 @@ This module aims at capturing information from cameras in enclosures.
 - Devices have sufficient power supply.
   
 ## Block Diagram
+![Block diagram - FishStatistics](https://github.com/Anamika1911/ArchitecturalKatas/assets/6397314/03fd005f-9088-401a-bcec-8d186cde44a8)
 
 ## Architecture
+MicroService Architecture
+Event based Architecture for alerts
