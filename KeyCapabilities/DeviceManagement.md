@@ -15,12 +15,12 @@ With a lot of devices, it is imperative that there should be a strong device mon
 ## Non-functional Requirements 
 - Solution is horizontally scalable.
 - Security
-  -- Transport Layer Security (TLS): LwM2M typically relies on TLS for secure communication between devices and servers. TLS provides encryption, data integrity, and authentication, ensuring that data exchanged between devices and servers remains confidential and tamper-proof.
+  - Transport Layer Security (TLS): LwM2M typically relies on TLS for secure communication between devices and servers. TLS provides encryption, data integrity, and authentication, ensuring that data exchanged between devices and servers remains confidential and tamper-proof.
 
-  -- Certificate-Based Authentication: In addition to PSK, LwM2M supports certificate-based authentication. Devices and servers can use X.509 certificates to authenticate each other during the TLS handshake. This method provides stronger authentication and enables more robust identity verification.
+  - Certificate-Based Authentication: In addition to PSK, LwM2M supports certificate-based authentication. Devices and servers can use X.509 certificates to authenticate each other during the TLS handshake. This method provides stronger authentication and enables more robust identity verification.
 
--- DTLS (Datagram Transport Layer Security): LwM2M can also use DTLS for secure communication in UDP-based scenarios. DTLS is similar to TLS but is designed for datagram-based communication, making it suitable for UDP, which is often used in IoT deployments.
+  - DTLS (Datagram Transport Layer Security): LwM2M can also use DTLS for secure communication in UDP-based scenarios. DTLS is similar to TLS but is designed for datagram-based communication, making it suitable for UDP, which is often used in IoT deployments.
 
--- Authorization: Authorization in LwM2M typically involves controlling access to resources on both devices and servers. This can be implemented through access control policies defined by the LwM2M Server. These policies specify which devices or users are allowed to perform specific operations on resources, such as read, write, execute, or delete.
+  - Authorization: Authorization in LwM2M typically involves controlling access to resources on both devices and servers. This can be implemented through access control policies defined by the LwM2M Server. These policies specify which devices or users are allowed to perform specific operations on resources, such as read, write, execute, or delete.
  
- -- Client Registration: Before a device can communicate with an LwM2M server, it typically needs to register itself with the server. During the registration process, authentication and authorization mechanisms are employed to ensure that only authorized devices can connect to the server and access its resources.
+  - Client Registration: Before a device can communicate with an LwM2M server, it typically needs to register itself with the server. During the registration process, authentication and authorization mechanisms are employed to ensure that only authorized devices can connect to the server and access its resources.
