@@ -27,6 +27,9 @@ Escalation policies needs to be defined so that alerts are addressed promptly. W
 - Contact persons or teams responsible for handling alerts
 - Timeframes for acknowledging and resolving alerts. This will help prevent alert fatigue and ensures timely response to critical issues.
 
+## Thrasholds
+Thrasholds for different sub-systems like water quality, weather etc. will be saved in their respective databases. 
+
 ## Block Diagram
 ![Block diagram - Alerting Module](https://github.com/Anamika1911/ArchitecturalKatas/assets/6397314/452c9c93-9a4b-44b4-972a-74024c32d238)
 
