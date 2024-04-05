@@ -16,5 +16,7 @@ This system is based on [Multi-tenant SAS model](ADRs/SingleTenantvsMultiTenant.
 - Since, customers are geographically distributed, solution will be deployed in regions closer to farm. Multiple availability zones will be used in a region for failover and availability. Deployment diagram is available at:
 - Thirdparty weather monitoring APIs will be used to monitor and predict weather conditions. Accordingly, alerts will be generated.
 - Association between devices and enclosures/farms will be either manually entered or devices can be programmed to send specific enclosure/farm Ids in header.
+- To accomodate low bandwidth areas, compression and packeting features will be used to send data from sensor devices to brokers.
+- 
 
 
