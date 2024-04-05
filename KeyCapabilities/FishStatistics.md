@@ -23,6 +23,7 @@ This module aims at processing information captured from cameras in enclosures.
   - If keypoints are varying, algorithms will generate an alert for same.
   - Incoming data will be windowed based on configurable Window interval.
   - Data will be filtered for low confidence points.
+  - For any considerable change in movement and number of bounded boxes, alert will be generated.
 - ImageProcessingService will consume data from datalake in batches, pre-process, train model using CNN. Data will be manually modified for images marked with low confidence.  
 - MicroService Architecture
 - Event based Architecture for alerts
