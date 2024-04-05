@@ -1,5 +1,5 @@
 # Overview
-This module aims at capturing information from cameras in enclosures. 
+This module aims at processing information captured from cameras in enclosures.
 
 ## Data Captured
 - Fish species
