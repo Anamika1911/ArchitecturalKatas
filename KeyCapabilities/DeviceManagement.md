@@ -7,7 +7,9 @@ With a lot of devices, it is imperative that there should be a strong device mon
 - Upgrade firmware
 - Report if any device is not responding
 - Generate alerts for misfunctioning devices
-  
+
+## Assumptions
+- User will first create farms and enclosures via UI and that enclosure ID will be fed into sensor device. Sensor device is capable of sending this information in header. This assumption will help to identify/correlate farms/enclosures with respective devices. 
 
 ## Block Diagram 
 ![Block diagram - Device Management](https://github.com/Anamika1911/ArchitecturalKatas/assets/6397314/365027fe-b9ed-4064-af15-b1243ab2f6c4)
