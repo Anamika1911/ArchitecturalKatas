@@ -11,6 +11,10 @@ This application aims to automate fish farming management. There are a lots of a
 Overall Component diagram is available at:
 
 ## Approach and Architecture
-This system is based on [Multi-tenant SAS model](ADRs/SingleTenantvsMultiTenant.md). Every customer is treated as a separate tenant and a unique tenantid is available throughout the system. Since, customers are geographically distributed, solution will be deployed in 
+This system is based on [Multi-tenant SAS model](ADRs/SingleTenantvsMultiTenant.md). 
+- Every customer is treated as a separate tenant and a unique tenantid is available throughout the system.
+- Since, customers are geographically distributed, solution will be deployed in regions closer to farm. Multiple availability zones will be used in a region for failover and availability. Deployment diagram is available at:
+- Thirdparty weather monitoring APIs will be used to monitor and predict weather conditions. Accordingly, alerts will be generated.
+- Association between devices and enclosures/farms will be either manually entered or devices can be programmed to send specific enclosure/farm Ids in header.
 
 
