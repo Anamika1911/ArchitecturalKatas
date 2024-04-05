@@ -30,4 +30,10 @@ Escalation policies needs to be defined so that alerts are addressed promptly. W
 ## Block Diagram
 ![Block diagram - Alerting Module](https://github.com/Anamika1911/ArchitecturalKatas/assets/6397314/452c9c93-9a4b-44b4-972a-74024c32d238)
 
-
+## Architecture
+- Event Driven
+- MicroServices
+## Non-functional Considerations
+- Fault tolerant
+- Scalability
+- Security: All the communicatio is over TLS with proper authentication/authorization in place. 
