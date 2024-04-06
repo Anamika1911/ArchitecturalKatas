@@ -9,8 +9,8 @@ This application aims to automate fish farming management. There are a lots of a
 - [Alert System](KeyCapabilities/AlertSystem.md)
 - [Reporting](KeyCapabilities/Reporting.md)
 
-Block Diagram: [Overall Component diagram](./BlockDiagram.md)
-
+## Block Diagram: [Overall Component diagram](./BlockDiagram.md)
+## Deployment Diagram: [Deployment Diagram](./DeploymentDiagram.md)
 
 ## Approach and Architecture
 This system is based on [Multi-tenant SAS model](ADRs/SingleTenantvsMultiTenant.md). 
