@@ -19,7 +19,8 @@ This system is based on [Multi-tenant SAS model](ADRs/SingleTenantvsMultiTenant.
 - Thirdparty weather monitoring APIs will be used to monitor and predict weather conditions. Accordingly, alerts will be generated.
 - Association between devices and enclosures/farms will be either manually entered or devices can be programmed to send specific enclosure/farm Ids in header.
 - To accomodate low bandwidth areas, compression and packeting features will be used to send data from sensor devices to brokers.
-- To process data in real time for alerts etc., ApacheSpark is used (even if it not explicitely mentioned in all diagrams in interest of time).
+- To process data in real time for alerts etc., ApacheFlink is used (even if it not explicitely mentioned in all diagrams in interest of time).
+- All sensors/cameras data will be streamed to Kafka and eventually to data lake for reporting and machine learning.
 - For reporting, matplotlib/plotly is deployed which can easily process big data from datalake.
 - Customers will be able to access application via Mobile App, web app or on any rudimentary device. BFF will take care of sending data to each type of device based on device specifications. 
 
