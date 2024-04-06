@@ -7,6 +7,7 @@ This application aims to automate fish farming management. There are a lots of a
 - [Fish Health Tracking](KeyCapabilities/FishStatistics.md)
 - [Harvest Management](KeyCapabilities/Harvest.md)
 - [Alert System](KeyCapabilities/AlertSystem.md)
+- [Reporting](KeyCapabilities/Reporting.md)
 
 Overall Component diagram is available at:
 
@@ -18,5 +19,7 @@ This system is based on [Multi-tenant SAS model](ADRs/SingleTenantvsMultiTenant.
 - Association between devices and enclosures/farms will be either manually entered or devices can be programmed to send specific enclosure/farm Ids in header.
 - To accomodate low bandwidth areas, compression and packeting features will be used to send data from sensor devices to brokers.
 - To process data in real time for alerts etc., ApacheSpark is used (even if it not explicitely mentioned in all diagrams in interest of time).
+- For reporting, matplotlib/plotly is deployed which can easily process big data from datalake.
+  
 
 
