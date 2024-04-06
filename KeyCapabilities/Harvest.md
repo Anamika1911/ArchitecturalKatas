@@ -11,7 +11,8 @@ To determine automatically, when a fish has been harvested from enclosures, info
 
 Datalake will already have all this information available. Special machine learning algorithms will be employed to understand best time to harvest the fish and accordingly user will be alerted for same. 
 ## Block Diagram
-![Block diagram - FishStatistics (2)](https://github.com/Anamika1911/ArchitecturalKatas/assets/6397314/a11b5d69-eb52-4e2a-a8e3-768764ac9678)
+![Block diagram - FishStatistics (4)](https://github.com/Anamika1911/ArchitecturalKatas/assets/6397314/d4eb0ca7-76e5-4c76-bc3d-722f79ec6e03)
+
 
 ## Architecture
 - BoundedContextService will be used to identify number of fish in the enclosure. If there is significant drop, it will be concluded that fish has been harvested. 
