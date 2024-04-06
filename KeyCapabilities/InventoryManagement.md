@@ -4,10 +4,6 @@ This module will take care of InventoryManagement which manages-
 1. FarmCollection
 2. Farm
 3. Enclosures in Farm
-4. Devices(Water Monitoring sensors and Camera) in each Enclosure
-5. Fish (Or can say Cattle) in each Enclosure
-
-We will have InventoryDatabase which will store above mentioned information.
 
 **Use Cases**
 
