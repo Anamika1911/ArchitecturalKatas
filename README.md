@@ -9,7 +9,7 @@ This application aims to automate fish farming management. There are a lots of a
 - [Alert System](KeyCapabilities/AlertSystem.md)
 - [Reporting](KeyCapabilities/Reporting.md)
 
-# [Overall Component diagram](/BlockDiagram.md)
+** [Overall Component diagram](./blob/main/BlockDiagram.md) **
 
 
 ## Approach and Architecture
