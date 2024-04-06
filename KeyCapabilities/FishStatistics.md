@@ -11,7 +11,8 @@ This module aims at processing information captured from cameras in enclosures.
 - Annotations specifying bounded boxes for images, keypoints indicating parasites on image and class, confidence level
   
 ## Block Diagram
-![Block diagram - FishStatistics (1)](https://github.com/Anamika1911/ArchitecturalKatas/assets/6397314/f12fcb97-2e98-459b-9dda-b8c05f11c4c3)
+![Block diagram - FishStatistics (3)](https://github.com/Anamika1911/ArchitecturalKatas/assets/6397314/1e5f4a3b-4d5a-4323-88aa-75caa2255a2e)
+
 
 ## Architecture
 - Data from MQTT broker will be streamed to datalake after some pre-processing.
