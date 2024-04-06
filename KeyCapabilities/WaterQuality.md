@@ -5,7 +5,7 @@ This module caters to following requirements:
 - Saving data to datalake for reports and analytics.
 - Saving alert thrashold configured on UI.
 - Monitor incoming data for any instant alerts to be generated.
-- Background services running every minute to check for any thrashold breach for data received in last 1 minute.
+- ApacheSpark task running every minute to check for any thrashold breach for data received in last 1 minute.
 
 ## Sensor Parameters
 - Temperature: Fish have specific temperature requirements depending on the species. Monitoring temperature ensures that it remains within the optimal range for the species being farmed.
@@ -14,7 +14,8 @@ This module caters to following requirements:
 - Ammonia (NH3/NH4+), Nitrite (NO2-), and Nitrate (NO3-) Levels: Monitoring these nitrogen compounds is essential for preventing ammonia and nitrite toxicity, which can harm fish.
 - Turbidity: The clarity of water can affect light penetration and thus photosynthesis in aquatic plants. Excessive turbidity can also indicate sedimentation or pollution issues.
 
-![Block diagram - WaterQuality (2)](https://github.com/Anamika1911/ArchitecturalKatas/assets/6397314/3f49495e-f53f-4740-ac7c-c6c05e46e1d9)
+![Block diagram - WaterQuality (4)](https://github.com/Anamika1911/ArchitecturalKatas/assets/6397314/1edafced-080a-4a1b-9366-f47d9534d1a7)
+
 
 ## Architecture
 - Data from MQTT broker will be streamed to datalake after some pre-processing.
