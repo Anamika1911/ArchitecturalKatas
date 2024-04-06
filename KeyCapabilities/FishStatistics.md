@@ -11,16 +11,17 @@ This module aims at processing information captured from cameras in enclosures.
 - Annotations specifying bounded boxes for images, keypoints indicating parasites on image and class, confidence level
   
 ## Block Diagram
-![Block diagram - FishStatistics (3)](https://github.com/Anamika1911/ArchitecturalKatas/assets/6397314/1e5f4a3b-4d5a-4323-88aa-75caa2255a2e)
+![Block diagram - FishStatistics (4)](https://github.com/Anamika1911/ArchitecturalKatas/assets/6397314/62608914-2ade-4761-afee-5b7e54371c78)
+
 
 
 ## Architecture
-- Data from MQTT broker will be streamed to datalake after some pre-processing.
+- Data from MQTT broker will be streamed to Kafka after some pre-processing.
 - Datalake will store data from every tenant in its space based on tenant Id.
 - TenantId will be available to every service via some registry of tenants.
 - It will be made sure that tenants should not be able to access each other's data.
-- FishStatistics alert service will process data from datalake in real time and is horizontal scaled.
-  - It will work on huge volumes of incoming data for processing. We will use apache spark to work on incoming data to find anything that does not fit into thrashold set for different incoming images.
+- FishStatistics alert service will process data from kafka in real time and is horizontal scaled.
+  - It will work on huge volumes of incoming data for processing. We will use apache flink to work on incoming data to find anything that does not fit into thrashold set for different incoming images.
   - If keypoints are varying, algorithms will generate an alert for same.
   - Incoming data will be windowed based on configurable Window interval.
   - Data will be filtered for low confidence points.
