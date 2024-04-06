@@ -17,6 +17,6 @@ This system is based on [Multi-tenant SAS model](ADRs/SingleTenantvsMultiTenant.
 - Thirdparty weather monitoring APIs will be used to monitor and predict weather conditions. Accordingly, alerts will be generated.
 - Association between devices and enclosures/farms will be either manually entered or devices can be programmed to send specific enclosure/farm Ids in header.
 - To accomodate low bandwidth areas, compression and packeting features will be used to send data from sensor devices to brokers.
-- 
+- To process data in real time for alerts etc., ApacheSpark is used (even if it not explicitely mentioned in all diagrams in interest of time).
 
 
