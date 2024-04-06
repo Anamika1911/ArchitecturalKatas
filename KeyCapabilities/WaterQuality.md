@@ -14,16 +14,17 @@ This module caters to following requirements:
 - Ammonia (NH3/NH4+), Nitrite (NO2-), and Nitrate (NO3-) Levels: Monitoring these nitrogen compounds is essential for preventing ammonia and nitrite toxicity, which can harm fish.
 - Turbidity: The clarity of water can affect light penetration and thus photosynthesis in aquatic plants. Excessive turbidity can also indicate sedimentation or pollution issues.
 
-![Block diagram - WaterQuality (4)](https://github.com/Anamika1911/ArchitecturalKatas/assets/6397314/1edafced-080a-4a1b-9366-f47d9534d1a7)
+![Block diagram - WaterQuality (5)](https://github.com/Anamika1911/ArchitecturalKatas/assets/6397314/35ee33f3-bc6e-42e3-8b3f-92e8f1408b7d)
+
 
 
 ## Architecture
-- Data from MQTT broker will be streamed to datalake after some pre-processing.
+- Data from MQTT broker will be streamed to kafka after some pre-processing.
 - Datalake will store data from every tenant in its space based on tenant Id.
 - TenantId will be available to every service via some registry of tenants.
 - It will be made sure that tenants should not be able to access each other's data.
-- WaterQualityAlert service will process data from datalake in real time and is horizontal scaled.
-- It will work on huge volumes of incoming data for processing. We will use apache spark to work on incoming data to find anything that does not fit into thrashold set for different incoming images.
+- WaterQualityAlert service will process data from kafka in real time and is horizontal scaled.
+- It will work on huge volumes of incoming data for processing. We will use apache flink to work on incoming data to find anything that does not fit into thrashold set for different incoming images.
 - Incoming data will be windowed based on configurable Window interval.
 - For any considerable change, alert will be generated.
 - MicroService Architecture
