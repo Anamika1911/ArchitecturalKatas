@@ -20,4 +20,5 @@ Customers will be able to set normal behaviour for particular region. Although, 
 We will use existing weather monitoring system to find anomalies and will not invest time in creating new one from scratch. 
 
 ## Block Diagram
-![Block diagram - WeatherMonitoring](https://github.com/Anamika1911/ArchitecturalKatas/assets/6397314/8c15fc9c-d34b-4fe0-8f65-e0dfa327bc03)
+![Block diagram - WeatherMonitoring (2)](https://github.com/Anamika1911/ArchitecturalKatas/assets/6397314/af5c2ab1-dd05-4f10-966e-41d40bce1052)
+
