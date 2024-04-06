@@ -22,6 +22,9 @@ This system is based on [Multi-tenant SAS model](ADRs/SingleTenantvsMultiTenant.
 - To process data in real time for alerts etc., ApacheSpark is used (even if it not explicitely mentioned in all diagrams in interest of time).
 - For reporting, matplotlib/plotly is deployed which can easily process big data from datalake.
 - Customers will be able to access application via Mobile App, web app or on any rudimentary device. BFF will take care of sending data to each type of device based on device specifications. 
-  
+
+## Logging and Monitoring
+- Proper logging will be in place to track transactions across system.
+- System will be monitored via cloud watch, Dynatrace etc. 
 
 
