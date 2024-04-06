@@ -12,8 +12,14 @@ With a lot of devices, it is imperative that there should be a strong device mon
 - User will first create farms and enclosures via UI and that enclosure ID will be fed into sensor device. Sensor device is capable of sending this information in header. This assumption will help to identify/correlate farms/enclosures with respective devices. 
 
 ## Block Diagram 
-![Block diagram - Device Management](https://github.com/Anamika1911/ArchitecturalKatas/assets/6397314/365027fe-b9ed-4064-af15-b1243ab2f6c4)
+![Block diagram - Device Management (1)](https://github.com/Anamika1911/ArchitecturalKatas/assets/6397314/1e47618c-a40f-4599-8f65-3a99cedf8887)
 
+## Architecture
+- Health data coming from sensor devices and cameras will be stored in data lake.
+- DeviceManagementAPI will interact with BFF to show device related data on UI.
+- DeviceHealthAlertSystem will consume data from lake and generate alerts if device needs attention. It will use [AlertSystem](KeyCapabilities/AlertSystem.md) to send alerts.
+- To update object recognition models in camera, we can use lwM2M to send firmware upgrades to camera. For any compatibility issues, LwM2M supports rollback.
+- 
 ## Non-functional Requirements 
 - Solution is horizontally scalable.
 - Security
