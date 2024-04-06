@@ -28,12 +28,13 @@ Escalation policies needs to be defined so that alerts are addressed promptly. W
 - Timeframes for acknowledging and resolving alerts. This will help prevent alert fatigue and ensures timely response to critical issues.
 
 ## Thrasholds
-Thrasholds for different sub-systems like water quality, weather etc. will be saved in their respective databases. 
+Thrasholds for different sub-systems like water quality, weather etc. will be entered manually from UI and saved in datalake. 
 
 ## Block Diagram
 ![Block diagram - Alerting Module](https://github.com/Anamika1911/ArchitecturalKatas/assets/6397314/452c9c93-9a4b-44b4-972a-74024c32d238)
 
 ## Architecture
+Different subsystems like waterQuality, FishStatistics etc. will have their individual services that will work on incoming data from datalake, consume thrasholds and publish alerts to a message broker. Alert module will consume these and send to different notification channels. 
 - Event Driven
 - MicroServices
 ## Non-functional Considerations
